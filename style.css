@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*HEADER*/
+
+header{    
+    width: 100%;
+    position: fixed;
+    display:grid;
+    grid-template-columns: auto auto auto;
+    color: white;
+    font-size: 25px;
+    text-transform:uppercase;
+    padding: 30px 180px;
+    justify-content: space-between;    
+    
+    font-family: "Bebas Neue", sans-serif;
+}
+
+header img {
+    width:200%;
+}
+#lupa{
+    width:200%;
+    top: 0;
+}
+
+.nav{
+    display:grid;    
+    grid-template-columns: auto auto auto auto auto auto;
+    margin-top:30px;
+    column-gap: 30px;
+}
+
+header::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-49%);
+    width: 82%;
+    border-bottom: 2px solid #fff;
+}
+
+/*HOME*/
+
+#home {
+    background-image: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(15,20,48,1)100%),
+                    url(./hiroshima.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1000px;
+    width:100%;
+    color: white;
+}
+
+.home-container{
+    padding:300px 180px;
+}
+
+#title-div{
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.title div:nth-child(1){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.title-container {
+    font-size: 100px;
+    display:flex;
+    flex-wrap: wrap;
+    max-width: 70%;
+
+}
+.title-container h1{
+    padding: 0 290px 0 0;
+}
+
+.number-container {
+    font-size: 32px;
+    list-style: none;
+    align-items:end;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+
+.number-container div {
+    color:rgba(255, 255, 255, 0.6)
+}
+
+.number-container div:nth-child(3){
+    color:rgba(255, 255, 255, 1)
+}
+
+.number-container div:nth-child(3) {
+    font-size: 60px;
+}
+
+.home-grid{
+    /*background-color: blue;*/
+}
+
+#plans {
+    background-color: rgb(15, 20, 48);
+}
+
+#videos {
+    background-image: linear-gradient(180deg, rgba(15,20,48,1) 0%, rgba(0,0,0,0.1) 100%),
+                      url(milkyway.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 1000px;
+    width:100%;
+    max-width: 4592px;
+}
