@@ -159,10 +159,16 @@ header::after{
     color: white;
     font-family: "Bebas Neue", sans-serif;
     text-align: center;
+    position: absolute;
 }
 
 #plans h2 {
     padding: 20px;
+}
+
+#plans img{
+    width:300px;
+    position: relative;
 }
 
 /*VIDEOS*/
