@@ -155,20 +155,37 @@ header::after{
 }
 
 #plans div div{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
+    display: flex;    
+    flex-wrap: wrap;
+    justify-content: space-evenly;    
+    width: 100%;
+}
+
+#plans div{
+    width: 100%;
 }
 
 #plans article{
     margin: 12px;
+    position: relative;
 }
 
 #plans article figure{
     width:100%;
+    height: 500px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
 }
 
-#plans article figure img{
-    width:100%;
+#plans article figure p, #plans article figure h3{
+    background-color: red;
+    padding: 0 15%;
+    margin: auto;
+}
+
+.figure1 {
+    background-image: url(./images/senso-ji-1.jpg);
 }
 
 #plans > div{
@@ -176,15 +193,6 @@ header::after{
     color: white;
     font-family: "Bebas Neue", sans-serif;
     text-align: center;
-}
-
-#plans h2 {
-    padding: 20px;
-}
-
-#plans img{
-    width:300px;
-    position: relative;
 }
 
 /*VIDEOS*/

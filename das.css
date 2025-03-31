@@ -1,0 +1,11 @@
+.box {
+    background-color: red;
+    height:800px;
+    width: 600px;
+
+}
+
+.box{
+    background-image: url(./images/senso-ji-2.jpg);
+    background-size: cover;
+}
